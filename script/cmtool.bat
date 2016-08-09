@@ -23,7 +23,7 @@ goto exit1
 
 if not defined CHEF_URL if "%CM_VERSION%" == "latest" set CM_VERSION=12.9.38-1
 
-if not defined CHEF_URL set CHEF_64_URL=https://packages.chef.io/stable/windows/2008r2/chef-client-%CM_VERSION%-x64.msi
+if not defined CHEF_URL set CHEF_64_URL=https://packages.chef.io/stable/windows/2008r2/chef-client-%CM_VERSION%.msi
 if not defined CHEF_URL set CHEF_32_URL=https://packages.chef.io/stable/windows/2008r2/chef-client-%CM_VERSION%-x86.msi
 
 if defined ProgramFiles(x86) (

@@ -134,9 +134,9 @@
   "provisioners": [
     {
       "environment_vars": [
-        "CM={{user `cm`}}",
-        "CM_VERSION={{user `cm_version`}}",
-        "UPDATE={{user `update`}}"
+        "CM=chef",
+        "CM_VERSION=11.18.10-1",
+        "UPDATE=true"
       ],
       "scripts": [
         "script/vagrant.bat",
@@ -144,15 +144,14 @@
         "script/vmtool.bat",
         "script/clean.bat",
         "script/ultradefrag.bat",
-        "script/uninstall-7zip.bat",
-        "script/sdelete.bat"
+        "script/uninstall-7zip.bat"
       ],
       "type": "windows-shell"
     }
   ],
   "variables": {
     "cm": "chef",
-    "cm_version": "",
+    "cm_version": "11.18.6",
     "disk_size": "40960",
     "headless": "false",
     "iso_checksum": "beed231a34e90e1dd9a04b3afabec31d62ce3889",
